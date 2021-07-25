@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.container{
+    max-width: 1146px;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.l-heading{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1rem .5rem;
+    font-weight:bolder;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn{
+    padding: .5rem 1.5rem;
+}
+
+.btn-dark{
+    padding: .5rem 1.5rem;
+    background: #333;
+
+}
+.btn-dark:hover{
+    background: rgb(255, 182, 65);
+    transition: .8s;
+}
+
+.btn-light{
+    background:#f4f4f4;
+    color: #333;
+}
+.btn-light:hover{
+    background: coral;
+    transition: .7s;
+}
+
+
+.lead{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.text-primary{
+    color: rgb(238, 175, 93);
+}
+
+.current{
+    background: #444;
+    color: rgb(255, 182, 65);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navbr */
+
+
+
+#navbar{
+    position: sticky;
+    top: 0;
+    background: #333;
+    box-shadow: 0 60px 120px 0 #333;
+    z-index: 90;
+  
+   
+
+}
+
+#navbar .main-nav{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+ 
+}
+
+#navbar .main-nav ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+}
+#navbar .main-nav ul li a{
+    padding:1.5rem 2.2rem;
+}
+#navbar .main-nav ul li a:hover{
+    background: #555;
+    transition: 0.8s;
+}
+
+
+
+
+
+
+
+
+
+/* Header */
+
+
+#header{
+    background:url(./img/1267_room-type.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100vh;
+ 
+}
+
+
+
+#header .header-content{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+    text-align: center;
+    line-height: 2rem;
+    
+
+}
+
+#header .header-content h3{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 157, 0);
+}
+
+
+/* Home-A */
+
+
+#home-a{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: url(./img/roskoshnyy-otel-s-basseynom-oboi-1600x900_47.jpg) no-repeat center center/cover;
+  
+}
+
+#home-a .home-a-content{
+    background: #333;
+    padding: 1.5rem;
+    color: #fff;
+   
+  
+}
+#home-a .home-a-content .contents{
+    text-align: center;
+
+}
+#home-a .home-a-content .contents h3{
+    padding: 5px;
+}
+#home-a .home-a-content .contents p{
+    padding: 1.5rem;
+}
+
+/* home-b */
+
+
+#home-b .items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+
+}
+#home-b .items .item{
+    padding: 2rem;
+}
+  
+
+#home-b .items .item:nth-child(2){
+    background: rgb(255, 161, 74);
+}
+
+/* about */
+
+#about-a{
+    background: #f4f4f4;
+    padding: 3rem;
+}
+
+#about-a .about-a-content{
+   display: flex;
+   flex-direction: column;
+   text-align: start;
+   position: relative;
+   left:150px;
+   
+  
+  
+}
+#about-a .about-a-content img{
+    width: 400px;
+    border-radius: 50%;
+    padding: 2rem;
+  
+}
+
+#about-a .about-a-content h1{
+   padding-bottom: 1rem;
+}
+
+
+#about-b{
+    background: url(./img/1267_room-type.jpg) no-repeat center center/cover;
+    opacity: 1.7;
+}
+
+#about-b .contents{
+    text-align: center;
+    padding:3rem;
+    color: #fff;
+}
+
+.members{
+    padding: 2.5rem;
+    
+}
+
+ .member-content1{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    background:rgba(255, 161, 74, 0.479);
+    padding: 2rem;
+    border-radius: 20px;
+    align-items: center;
+    
+    
+}
+.member-content2{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    background:rgba(255, 161, 74, 0.479);
+    align-items: center;
+    padding: 1rem;
+    border-radius: 20px;
+    
+    
+}
+ .member-content1 img,
+ .member-content2 img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+/* contact */
+
+
+#contact-a{
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    line-height: 2rem;
+    
+}
+#contact-a .content{
+    text-align: start;
+}
+#contact-a .content h1{
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+
+
+.text-fields{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+.text-fields input{
+    height: 40px;
+    outline: none;
+}
+
+.text-fields button{
+    display: inline;
+    width: 100px;
+    height: 50px;
+    border: none;
+    font-size: 15px;
+    color: #fff;
+
+}      
+
+
+
+
+
+#contact-b{
+    background: #444;
+    color: white;
+    text-align: center;
+}
+#contact-b .items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+}
+#contact-b .items .item{
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#main-footer{
+    background: #333;
+    height: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+
+
+
+
+@media(max-width:600px){
+     #navbar .main-nav{
+         display: flex;
+         flex-direction: column;
+         font-size: 15px;
+         text-align: center;
+         line-height: 2.3rem;
+         height: 7rem;
+     }
+
+
+        #header{
+         height: 50vh;
+        }
+        #header .header-content{
+         height: 50vh;
+        }
+        .header-content h3{
+            padding: 2rem;
+         
+        }
+
+        .header-content p{
+         display: none;
+
+        }
+
+        #home-a{
+            display: block;
+            background: none;
+        }
+        #home-a .contents{
+            padding: 2rem;
+        }
+        #home-b .items{
+            display: flex;
+            flex-direction: column;
+        }
+        #about-a .about-a-content{
+            text-align: center;
+            left: 0;
+        }
+        #about-a .about-a-content img{
+            display: none;
+            
+        }
+
+        .member-content1,
+        .member-content2{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contact-b .items{
+            display: flex;
+            flex-direction: column;
+        }
+}
